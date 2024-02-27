@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: private-repo-https
+  namespace: argocd
+  labels:
+    argocd.argoproj.io/secret-type: repository
+stringData:
+  type: git
+  url: https://github.com/lakshman-hithub/argocd-privaterepo.git
+  password: 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
+  username: lakshman-hithub
